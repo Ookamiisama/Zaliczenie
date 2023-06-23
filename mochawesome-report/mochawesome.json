@@ -1,0 +1,464 @@
+{
+  "stats": {
+    "suites": 10,
+    "tests": 10,
+    "passes": 8,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-06-22T13:37:08.225Z",
+    "end": "2023-06-22T13:41:26.809Z",
+    "duration": 258584,
+    "testsRegistered": 10,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ec023d20-0c8b-4c8e-89a3-c0b0e6ab947a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Zaliczenie\\zaliczenie.cy.js",
+      "file": "cypress\\e2e\\Zaliczenie\\zaliczenie.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a4abc2a-b681-47cb-ba0c-133c5c97be96",
+          "title": "Test 1 - Testy cookies pop-up na google",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Accept Cookies",
+              "fullTitle": "Test 1 - Testy cookies pop-up na google Accept Cookies",
+              "timedOut": null,
+              "duration": 1931,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#L2AGLb > .QS5gu').should('be.visible');\ncy.get('#L2AGLb > .QS5gu').click();\ncy.get('#L2AGLb > .QS5gu').should('not.be.visible');",
+              "err": {},
+              "uuid": "fa2427fd-f4a8-4d12-891c-d377ca52ca65",
+              "parentUUID": "4a4abc2a-b681-47cb-ba0c-133c5c97be96",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fa2427fd-f4a8-4d12-891c-d377ca52ca65"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1931,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "71836950-b2ac-4d62-b584-c9c5fd9b2e1f",
+          "title": "Test 2 - Wyszukiwanie i przechodzenie",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search",
+              "fullTitle": "Test 2 - Wyszukiwanie i przechodzenie search",
+              "timedOut": null,
+              "duration": 13541,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.closecookies();\ncy.get('#APjFqb').clear().type(_search.default[0].slownik);\ncy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click();\ncy.url().should('contain', '?q=galeria+slendzinskich');\ncy.get('.tF2Cxc > .yuRUbf > a > .LC20lb').click();\ncy.get('.cb-enable').click().should('not.be.visible');",
+              "err": {},
+              "uuid": "3e2ad317-880e-4780-91d6-84161d368972",
+              "parentUUID": "71836950-b2ac-4d62-b584-c9c5fd9b2e1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3e2ad317-880e-4780-91d6-84161d368972"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13541,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "522b59d2-552c-49b8-9004-1dcf7e83a2d5",
+          "title": "Test 3 - Sprawdzanie listy rozwijanej i przechodzenie na jedną pozycje",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "list",
+              "fullTitle": "Test 3 - Sprawdzanie listy rozwijanej i przechodzenie na jedną pozycje list",
+              "timedOut": null,
+              "duration": 6431,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(`https://galeriaslendzinskich.pl`);\ncy.get('#btn-open > .fa').click();\ncy.contains('Wizyta').click();\ncy.get('.cb-enable').click().should('not.be.visible');\ncy.scrollTo('bottom');",
+              "err": {},
+              "uuid": "bdea0c35-be59-437f-a434-a88e46d72d49",
+              "parentUUID": "522b59d2-552c-49b8-9004-1dcf7e83a2d5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bdea0c35-be59-437f-a434-a88e46d72d49"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6431,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1a28e56f-c634-4307-8cd6-b8a95bc9eb1b",
+          "title": "Test 4 - wybieranie regionów i wyszukiwanie",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "choosing regions",
+              "fullTitle": "Test 4 - wybieranie regionów i wyszukiwanie choosing regions",
+              "timedOut": null,
+              "duration": 69439,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.olx.pl/');\ncy.url().should('include', \"https://www.olx.pl/\");\ncy.get('#onetrust-accept-btn-handler').click().should('not.be.visible');\ncy.get('[data-cy=\"homepage_input_locationsearch\"]').click();\ncy.get('#a-region-18').click();\ncy.get('[data-cy=\"homepage_input_textsearch\"]').type('spider-man');\ncy.get('[data-cy=\"homepage_button_search\"]').click();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.google.com/__cypress/runner/cypress_runner.js:149324:72)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:149622:16)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:20941:23)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:16063:41)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:18876:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:18933:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:18978:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:19054:18)\n    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:15648:12)\n    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:15641:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:15657:5)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:15527:14)",
+                "diff": null
+              },
+              "uuid": "0c9d77ab-091a-4806-b43a-754e3899abe5",
+              "parentUUID": "1a28e56f-c634-4307-8cd6-b8a95bc9eb1b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0c9d77ab-091a-4806-b43a-754e3899abe5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 69439,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "98294538-6c02-4654-8ddd-c82453eee826",
+          "title": "Test 5 - zawężanie wyszukiwania",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "choosing filtrs",
+              "fullTitle": "Test 5 - zawężanie wyszukiwania choosing filtrs",
+              "timedOut": null,
+              "duration": 27645,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.olx.pl/');\ncy.url().should('include', \"https://www.olx.pl/\");\ncy.get('#onetrust-accept-btn-handler').click().should('not.be.visible');\ncy.get('[data-cy=\"homepage_input_locationsearch\"]').click();\ncy.get('#a-region-18').click();\ncy.get('[data-cy=\"homepage_input_textsearch\"]').type('koszulkowo');\ncy.get('[data-cy=\"homepage_button_search\"]').click();\ncy.get('[data-cy=\"category-dropdown\"]').click();\ncy.contains('Moda').click();\ncy.get(':nth-child(1) > [data-testid=\"label\"] > [data-testid=\"checkbox-field\"]').click();",
+              "err": {},
+              "uuid": "49053f8a-d1ad-4122-bc3e-aa1733dcc81c",
+              "parentUUID": "98294538-6c02-4654-8ddd-c82453eee826",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "49053f8a-d1ad-4122-bc3e-aa1733dcc81c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27645,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "989b5f38-7d07-4ad8-927a-fc3bc77ae9bf",
+          "title": "Test 6 - google play",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "google play",
+              "fullTitle": "Test 6 - google play google play",
+              "timedOut": null,
+              "duration": 6869,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.olx.pl/');\ncy.url().should('include', \"https://www.olx.pl/\");\ncy.get('#onetrust-accept-btn-handler').click().should('not.be.visible');\ncy.scrollTo('bottom');\ncy.get('#footerAppAndroid > .icon').invoke(\"removeAttr\", \"target\").click();\ncy.url().should('contain', \"olx\");",
+              "err": {},
+              "uuid": "1ebe4e6a-518c-4879-96b0-f2737d7c98f6",
+              "parentUUID": "989b5f38-7d07-4ad8-927a-fc3bc77ae9bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ebe4e6a-518c-4879-96b0-f2737d7c98f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6869,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2f1dd5e1-50c2-46d1-bac9-55ac1a71d2fe",
+          "title": "Test 7 - Logowanie się w onet przy uzyciu złego loginu",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "logging to onetl",
+              "fullTitle": "Test 7 - Logowanie się w onet przy uzyciu złego loginu logging to onetl",
+              "timedOut": null,
+              "duration": 12221,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://konto.onet.pl/signin?state=https%3A%2F%2Fpoczta.onet.pl%2F&client_id=poczta.onet.pl.front.onetapi.pl');\ncy.url().should(`contain`, `onet`);\ncy.get('.cmp-intro_acceptAll > span').click().should('not.be.visible');\ncy.get('#email').type('pr.klimgmail.com');\ncy.get('#password').type('zlehaslo');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Nieprawidłowy');",
+              "err": {},
+              "uuid": "fb48f778-0677-4269-af08-645495db4ccf",
+              "parentUUID": "2f1dd5e1-50c2-46d1-bac9-55ac1a71d2fe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb48f778-0677-4269-af08-645495db4ccf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12221,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7c12ce78-e15a-41e3-ac69-a1e5170bab2f",
+          "title": "Test 8 - Test nawigacji",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "navigating",
+              "fullTitle": "Test 8 - Test nawigacji navigating",
+              "timedOut": null,
+              "duration": 6085,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.gov.pl/');\ncy.url().should(`contain`, `gov`);\ncy.get('#govpl-i-council_of_ministers').click().wait(1000);\ncy.url().should('include', 'rada-ministrow');\ncy.contains('Jarosław Kaczyński').should('be.visible');\ncy.get('#govpl-i-gov_home').click({\n  force: true\n});\ncy.url().should('include', 'gov');",
+              "err": {},
+              "uuid": "0ab19f93-71cd-44c2-a5f8-531b371d2eca",
+              "parentUUID": "7c12ce78-e15a-41e3-ac69-a1e5170bab2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ab19f93-71cd-44c2-a5f8-531b371d2eca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6085,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8ad6d458-57f9-467a-8356-276dfa59c822",
+          "title": "Test 9 - Test wysyłania formularza",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "contact form",
+              "fullTitle": "Test 9 - Test wysyłania formularza contact form",
+              "timedOut": null,
+              "duration": 6506,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.9bits.com/pl');\ncy.url().should(`contain`, `9bits`);\ncy.get('.container--full > .title').scrollIntoView();\ncy.get('#mat-input-0').type('test');\ncy.get('#mat-input-1').type('test');\ncy.get('#mat-input-2').type('test');\ncy.get('#mat-input-3').type('test@test.pl');\ncy.get('.contact__form > .big-button > .button').click();",
+              "err": {},
+              "uuid": "5c4059fd-7665-4aba-bba7-7f53efd5cff5",
+              "parentUUID": "8ad6d458-57f9-467a-8356-276dfa59c822",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5c4059fd-7665-4aba-bba7-7f53efd5cff5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6506,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d7748569-2b17-4afb-913a-0492dbb56070",
+          "title": "Test 10 - Test dodania do koszyka",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "adding to cart",
+              "fullTitle": "Test 10 - Test dodania do koszyka adding to cart",
+              "timedOut": null,
+              "duration": 104479,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.zalando.pl/polo-ralph-lauren-jermain-athletic-unisex-sneakersy-niskie-white-po215o019-a11.html');\ncy.url().should(`contain`, `zalando`);\ncy.get('[data-testid=\"pdp-size-picker-trigger\"]').click();\ncy.contains('49').click();\ncy.get('[data-testid=\"pdp-add-to-cart\"] > .DJxzzA').click().wait(1000);\ncy.visit('https://www.zalando.pl/cart/');\ncy.contains('Lauren');",
+              "err": {
+                "message": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.",
+                "estack": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n    at https://www.google.com/__cypress/runner/cypress_runner.js:151891:81\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:20941:23)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:16063:41\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:18876:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:18933:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:18978:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:19054:18)\n    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:15648:12)\n    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:15641:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:15657:5)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:15527:14)",
+                "diff": null
+              },
+              "uuid": "117b835f-7b5d-4364-bcf8-81c4f0d693ac",
+              "parentUUID": "d7748569-2b17-4afb-913a-0492dbb56070",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "117b835f-7b5d-4364-bcf8-81c4f0d693ac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 104479,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportfilename": "[name]-report",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
